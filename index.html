@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1"/>
+		<title>Formulario</title>
+		<link rel="stylesheet" type="text/css" href="style.css"></lin>
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	
+	</head>
+	<body>
+		<div id="global">
+			<div id="registro">
+				<h1>Registro de nuevo libro</h1>
+			<form>
+				<div id="nombre">
+					<div id="inNombre">
+						<input type="text" id="nombreLibro" name="nombreLibro" placeholder="Nombre" required>
+						<input type="text" id="isbn" name="isbn" placeholder="isbn" required>
+						<input type="number" id="año" name="año" placeholder="Año" required>
+						<input type="text" id="autor"  name="autor" placeholder="Autor" min="1" max="100" >
+					</div>
+				</div>
+				<div id="inBoton">
+					<input type="submit" id="botonGrabar" name="enviar" value="Grabar" >
+					<input type="button" id="botonImprimir" name="sacar" value="Ver Libros" >
+				</div>
+			</form>
+			</div>
+		</div>
+		<div id="respuesta">
+		</div>
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
+</html>
+
+

@@ -1,0 +1,117 @@
+*{
+	margin: auto;
+}
+
+body{
+	width: 100%;
+	background: #333;
+	min-height: 100vh; /*por defecto la altura es toda la pantalla*/
+	display: flex;
+	flex-direction: column;
+}
+
+#global{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/*color del texto placeholder*/
+::placeholder {
+	 color: green; 
+}
+
+/*elimino las flechas del input type="number"*/
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+#registro{
+	width: 40%;
+	background: white;
+	border-radius: 11px;
+	min-width: 295px;   /*tamaño minimo maximo a la que se puede reducir la web*/
+}
+
+h1{
+	width: 95%;
+	font-family: 'Noto Sans TC', sans-serif;
+}
+
+#titulo{
+	width: 100%;
+	text-align: left;
+	margin-top: 10px;
+	margin-bottom: 5px;
+   font-family: 'Bitter', serif;
+}
+
+
+
+#nombre{
+	width: 95%;
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+	display: flex;
+	flex-direction: column;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#inNombre{
+	display: flex;
+	flex-direction: column;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#inNombre input{
+	margin-left: 0;
+}
+
+input, #nombreInput, select{
+	color: green;
+	border-top: 2px solid black;
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+	padding: 10px;
+	margin-bottom: 5px;
+	text-align: start;
+    padding-right: 33px;
+    padding-left: 0;
+
+}
+
+#nombreInput{
+	padding-right: 0px;
+}
+
+
+
+#inBoton{
+	width: 95%;
+	display: flex;
+}
+
+#boton{
+	margin-top: 10px;
+    width: 40%;
+    border: none;
+    background: #37D03E;
+    text-align: center;
+    color: white;
+    font-family: 'Bitter', serif;
+    margin-bottom: 10px;
+}
+
+#respuesta{
+	widows: 70%;
+	border-radius: 11px;
+	background: white;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
